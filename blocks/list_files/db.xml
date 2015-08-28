@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btListFiles">
+		<field name="bID" type="I"><key /><unsigned /></field>
+		<field name="fsID" type="I">
+			<unsigned />
+			<default value="0" />
+		</field>
+		<field name="randomOrder" type="I1" size="1">
+			<default value="0" />
+			<notnull />
+		</field>
+	</table>
+	<table name="btListFilesSelected">
+		<field name="bID" type="I"><unsigned /></field>
+		<field name="fID" type="I"><unsigned /></field>
+		<field name="priority" type="I">
+			<default value="0" />
+		</field>
+		<index name="bID">
+			<col>bID</col>
+		</index>
+	</table>
+	<table name="btListFilesData">
+		<field name="bID" type="I"><unsigned /></field>
+		<field name="fID" type="I"><unsigned /></field>
+		<field name="attributesData" type="X2" />
+		<index name="bIDfID">
+			<col>bID</col>
+			<col>fID</col>
+		</index>
+	</table>
+</schema>
