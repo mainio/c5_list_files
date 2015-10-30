@@ -11,30 +11,6 @@ var CCM_LIST_FILES_FILESET_DETAILS_URL = '<?php echo URL::to('/ccm/list_files/de
 var CCM_LIST_FILES_BID = '<?php echo strlen($bID) ? $bID : 'x' ?>';
 </script>
 <style type="text/css">
-/*#ccm-files-container .file-row .mover {
-    float: right;
-    width: 14px;
-    height: 14px;
-    background: transparent url(<?php echo ASSETS_URL_IMAGES ?>/icons/up_down.png) no-repeat 0 0;
-    margin: 10px 0 0 0;
-    cursor: move;
-}
-#ccm-files-container .file-row .remover {
-    float: right;
-    width: 16px;
-    height: 16px;
-    background: transparent url(<?php echo ASSETS_URL_IMAGES ?>/icons/delete_small.png) no-repeat 0 0;
-    margin: 9px 10px 0 0;
-    cursor: pointer;
-}
-#ccm-files-container .file-row .editor {
-    float: right;
-    width: 16px;
-    height: 16px;
-    background: transparent url(<?php echo ASSETS_URL_IMAGES ?>/icons/save_search.png) no-repeat 0 0;
-    margin: 9px 8px 0 0;
-    cursor: pointer;
-}*/
 #ccm-files-container .file-row .mover,
 #ccm-files-container .file-row .remover,
 #ccm-files-container .file-row .editor {
@@ -58,6 +34,7 @@ var CCM_LIST_FILES_BID = '<?php echo strlen($bID) ? $bID : 'x' ?>';
 }
 #ccm-files-container .file-row .file-preview {
     float: left;
+    width: 45px;
 }
 #ccm-files-container .file-row .file-name {
     margin-left: 70px;
